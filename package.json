@@ -1,0 +1,30 @@
+{
+    "name": "@dekproject/map",
+    "version": "1.0.0",
+    "description": "File mapper for DEK",
+    "main": "./build/index.js",
+    "scripts": {
+        "build": "babel src -s -D -d build --presets env"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dekproject/map.git"
+    },
+    "keywords": [
+        "dek",
+        "map"
+    ],
+    "author": "Andre Ferreira <andre@vigiadepreco.com.br>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dekproject/map/issues"
+    },
+    "homepage": "https://github.com/dekproject/map#readme",
+    "dependencies": {
+        "globby": "^9.2.0"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0"
+    }
+}
