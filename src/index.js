@@ -1,7 +1,7 @@
 import path from "path";
 import globby from "globby";
 
-export default async (mapPath) => {
+export let map = async (mapPath) => {
     const mapPathResolve = path.join(process.cwd(), mapPath);
 
     await globby([`${mapPathResolve}/*.js`, `${mapPathResolve}/**/*.js`]).then((paths) => {
